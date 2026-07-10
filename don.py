@@ -1,4 +1,3 @@
-%%writefile don.py
 import streamlit as st
 import sqlite3
 import pandas as pd
@@ -15,7 +14,7 @@ CREATE TABLE IF NOT EXISTS students(
     classe TEXT,
     age INTEGER)""")
 conn.commit()
-st.write("UNIVERSITE DE LUBUMBASHI")
+
 st.image("XVIF6216.jpg",width=50)
 st.sidebar.markdown("<h1 style='color:blue;'>🎓 Plateforme Scolaire</h1>", unsafe_allow_html=True)
 menu = st.sidebar.radio("MENU",["Accueil","Ajouter un étudiant","Liste des étudiants","À propos"])
@@ -80,6 +79,6 @@ elif menu=="À propos":
 
     E-mail: mutimadonurbain@gmail.com
 
-    Tel: +243 823817622
+    Tel: +243 802795223
     """)
 st.sidebar.image("XVIF6216.jpg", width=170)
