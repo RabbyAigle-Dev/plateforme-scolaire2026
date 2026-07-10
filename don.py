@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS students(
     age INTEGER)""")
 conn.commit()
 
-st.image("XVIF6216.jpg",width=50)
+
 st.sidebar.markdown("<h1 style='color:blue;'>🎓 Plateforme Scolaire</h1>", unsafe_allow_html=True)
 menu = st.sidebar.radio("MENU",["Accueil","Ajouter un étudiant","Liste des étudiants","À propos"])
 if menu == "Accueil":
@@ -81,4 +81,3 @@ elif menu=="À propos":
 
     Tel: +243 802795223
     """)
-st.sidebar.image("XVIF6216.jpg", width=170)
